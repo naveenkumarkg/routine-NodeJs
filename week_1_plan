@@ -23,6 +23,29 @@ Started section three which is introduction to the Node Modules
       const http = require('http');
       const server =  http.createServer((req,res)=>{console.log(req)});
       server.listen(3000)
+ The important things to be noted in section 3 are 
+	understanding the Req and Response
+	Event Loop
+	Sending response 
+		  const server =  http.createServer((req,res)=>{
+			res.write('<html>');
+				create the HTMl you prefer 
+			res.write('</html>');
+		  });
+		  
+	Routing Request 
+	<button type="submit" action="/mesage" method="POST">
+	
+	fs.writeFile('file.txt','File data',()=>{something to be executed after file is created});
+	
+	
+	Parsing Request Bodies
+		Strams and Buffers 
+		req.on(and its parameters)
+		Single thread , Event Loop , blocking code 
+	Wrap Up
+		
+	  
 
       
 
